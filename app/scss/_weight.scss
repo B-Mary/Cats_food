@@ -1,0 +1,232 @@
+.weight{
+  margin-top: 240px;
+}
+
+.wrapper-weight{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between
+}
+.logo-weight{
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color:$gray;
+}
+.logo-weight__title{
+  color: #111111;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+  margin-top: 39px;
+  padding-left: 92px;
+
+}
+.logo-weight__title_slim{
+  position: relative;
+}
+.logo-weight__title_slim::before{
+  content: url(../images/slim-cat.png);
+  width: 50px;
+  height: 51px;
+  position: absolute;
+  top: -10px;
+  left: 22px;
+}
+.logo-weight__title_pro{
+  position: relative;
+}
+.logo-weight__title_pro::before{
+  content: url(../images/pro-cat.png);
+  width:67px ;
+  height: 50px;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+}
+
+.logo-weight__text{
+  margin-left: 21px;
+  margin-right: 5%;
+  margin-bottom: 23px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.link-weight__text{
+  color: #111111;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 5%;
+  margin-bottom: 22px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.link-weight__text::before{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: black;
+  opacity: 0.1;
+  margin-right: 5%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.link-weight__text::after{
+  content: url(../images/arrow-link.png);
+  width: 24px;
+  height: 11px;
+  position: absolute;
+  left: 105px;
+  top: 18px;
+}
+.link-weight__text:hover::after{
+  width: 33px;
+}
+
+
+// Tablet
+@media (min-width: 768px){
+  .weight{
+    margin-top: 580px;
+  }
+
+  .logo-weight{
+    width: 100%;
+  }
+  .logo-weight__title{
+    margin-top: 81px;
+    padding-left: 0;
+    font-size: 36px;
+    margin-left: 55px;
+  }
+
+  .logo-weight__title_slim::before{
+    content: url(../images/slim-tablet.png);
+    width:220px ;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 65%;
+  }
+
+  .logo-weight__title_pro::before{
+    content: url(../images/pro-tablet.png);
+    width:268px ;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 58%;
+  }
+  .logo-weight__text{
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 55px;
+    width: 50%;
+  }
+
+  .link-weight__text{
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 30px;
+  }
+
+  .link-weight__text::before{
+    display: none;
+  }
+  .link-weight__text::after{
+    content: url(../images/arrow-link.png);
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    left: 135px;
+    top: 26px;
+  }
+  .link-weight__text:hover::after{
+    width: 33px;
+  }
+}
+
+// Desctop
+@media (min-width: 1300px){
+  .weight{
+    margin-top: 350px ;
+  }
+  .wrapper-weight{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .logo-weight{
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .logo-weight__title {
+    padding-left: 216px;
+    margin-top: 81px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    position: relative;
+  }
+  .logo-weight__title_slim::before{
+    content: url(../images/slim-desktop.png);
+    width: 100px;
+    height: 106px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+  }
+  .logo-weight__title_pro::before{
+    content: url(../images/pro-desktop.png);
+    width: 134px;
+    height: 100px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+  .logo-weight__text{
+    margin-top: 72px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 422px;
+  }
+
+  .link-weight__text{
+    padding-top: 0;
+    margin-top: 36px;
+    margin-bottom: 62px;
+  }
+  .link-weight__text::after{
+    content: url(../images/arrow-link.png);
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    left: 135px;
+    top: -2px;
+  }
+  .link-weight__text:hover::after{
+    width: 33px;
+  }
+}

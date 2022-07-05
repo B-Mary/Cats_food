@@ -1,0 +1,195 @@
+
+.wrapp-contact{
+  position: relative;
+}
+.wrapp-contact__title{
+  font-size: 24px;
+  width: 55%;
+  margin-left: 5%;
+}
+
+.wrapp-contact__line{
+  height: 3px;
+  width: 40%;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.container-contact{
+  margin-left: 5%;
+  width: 85%;
+  margin-bottom: 31px;
+}
+.block-email,
+.block-number{
+  position: relative;
+  width: 100%;
+  height: 65px;
+}
+.block-email__label,
+.block-number__label{
+  font-size: 16px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.block-email__input{
+  background: url(../images/mail.png) no-repeat 95% center;
+  border-radius: 3%;
+  border: 1px solid rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 45px;
+  color: #444;
+  font-size: 16px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.block-number__input{
+  width: 65%;
+  background: url(../images/phone.png) no-repeat 95% center;
+  border-radius: 3%;
+  border: 1px solid rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 45px;
+  color: #444;
+  font-size: 16px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+
+.block-email__input:hover{
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.block-email__input:active{
+  border: 1px solid #000;
+}
+.block-email__input:valid{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.block-email__input:invalid{
+  border-color:red;
+}
+.block-email__input:required{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.block-number__input:hover{
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.block-number__input:active{
+  border: 1px solid #000;
+}
+.block-number__input:valid{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.block-number__input:invalid{
+  border-color:red;
+}
+.block-number__input:required{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+// Tablet
+@media (min-width: 768px){
+  .wrapp-contact__title{
+    font-size: 36px;
+    margin-left: 6%;
+    padding-left: 4%;
+    position: relative;
+    background-color: #fff;
+    z-index: 10;
+    width: 540px;
+  }
+
+  .wrapp-contact__line{
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+  .container-contact{
+    margin-left: 10%;
+    width: 81%;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  .block-email,
+  .block-number{
+    margin-left: 0;
+    width: 100%;
+    height: 75px;
+  }
+  .block-email__label,
+  .block-number__label{
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 20px;
+  }
+  .block-email__input{
+    width: 85%;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .block-number__input{
+    width: 80%;
+    height: 52px;
+    color: #444;
+    font-size: 20px;
+  }
+
+}
+
+// Desctop
+@media (min-width: 1300px){
+  .wrapp-contact__title{
+    margin-left: 5%;
+    font-size: 36px;
+    width: 540px;
+    margin-left: 3%;
+    padding-left: 2%;
+  }
+  .container-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .block-email,
+  .block-number{
+    margin-left: 0;
+    width: 70%;
+    height: 75px;
+  }
+  .block-number{
+    margin-left: 5%;
+  }
+
+  .block-email__input{
+    width: 80%;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .block-number__input{
+    width: 75%;
+    height: 52px;
+    color: #444;
+    font-size: 20px;
+  }
+
+}

@@ -1,0 +1,145 @@
+.info{
+  margin-top: 32px;
+}
+
+.info__title{
+  margin-left: 5%;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.wrapper{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15px;
+}
+.block-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 60px;
+  margin-top: 20px;
+}
+.block-info__img{
+  width: 60px;
+  height: 60px;
+}
+
+.block-info__text{
+  margin-top: 6px;
+  margin-left: 20px;
+  width: 70%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 18px;
+}
+// Tablet
+@media (min-width: 768px){
+  .info{
+    margin-top: 51px;
+  }
+
+  .info__title{
+    font-size: 60px;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .block-info{
+    margin-right: 10%;
+    width: 40%;
+    height: 228px;
+    flex-direction: column;
+    margin-bottom: 67px;
+  }
+
+  .block-info__img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .block-info__text{
+    margin-top: 37px;
+    margin-left: 0;
+    width: 201px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+  }
+
+  .block-info__text_first::after{
+    content: url(../images/one.png);
+    position: absolute;
+    top: -170%;
+    right: 25px;
+    z-index: -1;
+    width: 71px;
+    height: 228px;
+  }
+
+  .block-info__text_second::after{
+    content: url(../images/two.png);
+    position: absolute;
+    top: -170%;
+    right: -20px;
+    z-index: -1;
+    width: 114px;
+    height: 230px;
+  }
+  .block-info__text_third::after{
+    content: url(../images/three.png);
+    position: absolute;
+    top: -170%;
+    right: -20px;
+    z-index: -1;
+    width: 113px;
+    height: 233px;
+  }
+
+  .block-info__text_fourth::after{
+    content: url(../images/four.png);
+    position: absolute;
+    top: -170%;
+    right: -20px;
+    z-index: -1;
+    width: 121px;
+    height: 228px;
+  }
+}
+// Desktop
+@media (min-width: 1300px){
+  .info{
+    margin-top: 79px;
+  }
+
+  .info__title{
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  .wrapper{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .block-info{
+    margin-right: 0;
+    width: 240px;
+  }
+  .block-info:nth-child(2),
+  .block-info:nth-child(3),
+  .block-info:nth-child(4){
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,89 @@
+
+.wrapp-comments{
+  position: relative;
+}
+
+.wrapp-comments__title{
+  font-size: 24px;
+  margin-left: 5%;
+  margin-bottom: 31px;
+}
+
+.wrapp-comments__line{
+  height: 3px;
+  width: 60%;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.form-comments{
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.form-comments__area{
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 85%;
+  height: 150px;
+}
+.form-comments__area::placeholder{
+  font-size: 16px;
+  color: #444;
+  text-transform: uppercase;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+// Tablet
+@media (min-width: 768px){
+
+  .wrapp-comments__title{
+    font-size: 36px;
+    margin-left: 6%;
+    padding-left: 4%;
+    position: relative;
+    background-color: #fff;
+    z-index: 10;
+    width: 230px;
+    margin-bottom: 71px;
+  }
+
+  .wrapp-comments__line{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+
+  .form-comments{
+    margin-left: 10%;
+    margin-bottom: 70px;
+  }
+
+  .form-comments__area{
+    height: 175px;
+    width: 90%;
+  }
+
+  .form-comments__area::placeholder{
+    font-size: 20px;
+  }
+
+}
+
+// Desktop
+@media (min-width: 1300px){
+  .wrapp-comments__title{
+    margin-left: 3%;
+    padding-left: 2%;
+  }
+
+  .form-comments{
+    margin-left: 5%;
+  }
+
+  
+
+
+}

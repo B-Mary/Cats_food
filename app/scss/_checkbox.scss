@@ -1,0 +1,169 @@
+.wrapp-checkbox{
+  margin-top: 30px;
+  position: relative;
+}
+
+.wrapp-checkbox__title{
+  font-size: 24px;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+.wrapp-checkbox__line{
+  height: 3px;
+  width: 49%;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.form-checkbox{
+  margin-top: 35px;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.block-checkbox{
+  position: relative;
+  height: 45px;
+}
+
+.block-checkbox__input{
+  display: none;
+}
+
+.block-checkbox__label{
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  padding-top: 5px;
+  position: absolute;
+}
+
+.block-checkbox__label::before{
+  content: url(../images/checkbox.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.block-checkbox__input:checked + .block-checkbox__label::after{
+  content: url(../images/checkbox-on.png);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.cont-button{
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.cont-button__text{
+  font-size: 14px;
+  color: #444;
+  margin: 0 auto;
+  margin-top: 23px;
+  text-align: center;
+}
+
+// Tablet
+@media (min-width:768px){
+
+  .wrapp-checkbox{
+    margin-top: 70px;
+  }
+  .wrapp-checkbox__title{
+    font-size: 36px;
+    margin-left: 6%;
+    padding-left: 4%;
+    position: relative;
+    background-color: #fff;
+    z-index: 10;
+    width: 230px;
+    margin-bottom: 71px;
+  }
+
+  .wrapp-checkbox__line{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+
+  .form-checkbox{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .block-checkbox{
+    width: 50%;
+    height: 55px;
+  }
+  .block-checkbox__label{
+    font-size: 20px;
+  }
+  .block-checkbox__input:checked + .block-checkbox__label::after{
+    content: url(../images/checkbox-on.png);
+    position: absolute;
+    top: 3.5px;
+    left: 6px;
+  }
+
+  .cont-button{
+    width: 85%;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cont-button__text{
+    font-size: 16px;
+    text-align: start;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+}
+
+// Desktop
+@media (min-width: 1300px){
+  .wrapp-checkbox__title{
+    margin-left: 3%;
+    padding-left: 2%;
+  }
+
+  .form-checkbox{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+
+  }
+
+  .block-checkbox{
+    width: 20%;
+    height: 55px;
+  }
+  .block-checkbox__input:checked + .block-checkbox__label::after{
+    content: url(../images/checkbox-on.png);
+    position: absolute;
+    top: 4.5px;
+    left: 6px;
+  }
+
+  .cont-button{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 70px;
+  }
+
+
+}

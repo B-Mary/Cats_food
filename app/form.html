@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+<!-- @include('partials/headForm.html') -->
+<body>
+
+  <!-- Header start -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="container-header">
+        <a class="block-logo">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="images/logo-desktop.svg 1x">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg 1x">
+            <img src="images/logo-mobile.png" alt="кот" class="block-logo__image">
+          </picture>
+        </a>
+        <img src="images/logo-mobile-header.png" alt="text logo" class="container-header__logo">
+
+
+        <div class="menu-burger">
+          <div class="burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+          </div>
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="index.html" class="list-item__link list-item__link_main  ">
+                Главная
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="catalog.html" class="list-item__link list-item__link_catalog">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="form.html" class="list-item__link list-item__link_programm active-link">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Header end  -->
+<!-- Main start -->
+  <main class="main">
+    <!-- Section selection of the program -->
+    <section class="selection">
+      <div class="wrapp-selection">
+        <h2 class="wrapp-selection__title">
+          Подбор программы
+        </h2>
+        <p class="wrapp-selection__text">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
+        <div class="cont-selection">
+          <div class="block-form">
+            <div class="cont-1">
+              <label for="name" class="block-form__label ">
+                Имя:*
+              </label>
+              <input type="text" name="form" id="name" placeholder="Барсик" required  class="block-form__input block-form__input_name" pattern="[A-Za-zА-Яа-яЁё]{1,15}">
+            </div>
+            <div class="cont-2">
+              <label for="weight" class="block-form__label ">
+                Вес (кг):*
+              </label>
+              <input type="text" name="form" id="weight" placeholder="7 " required class="block-form__input block-form__input_weight" pattern="[0-09]{1,15}">
+            </div>
+           <div class="cont-3">
+            <label for="age" class="block-form__label">
+              Возраст (лет):
+            </label>
+            <input type="text" name="form" id="age" placeholder="7 " class="block-form__input block-form__input_age">
+           </div>
+
+          </div>
+
+          <div class="form-input">
+            <div class="body-input body-input_f">
+              <input type="radio" class="body-input__input" name="body" id="slim" checked>
+              <label for="slim" class="body-input__label">
+                Похудение
+              </label>
+            </div>
+            <div class="body-input">
+              <input type="radio" class="body-input__input" name="body" id="fat">
+              <label for="fat" class="body-input__label">
+                Набор массы
+              </label>
+            </div>
+            <div class="body-input">
+              <input type="radio" class="body-input__input" name="body" id="idnk" >
+              <label for="idnk" class="body-input__label">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section сontact details -->
+    <section class="contact">
+      <div class="wrapp-contact">
+        <h2 class="wrapp-contact__title">
+          Контактные данные
+(владельца кота)
+        </h2>
+        <img src="images/line-mobile.png" alt="green line" class="wrapp-contact__line">
+        <div class="container-contact">
+          <div class="block-email">
+            <label for="ml" class="block-email__label">
+              E-mail:*
+            </label>
+            <input type="email" name="email" class="block-email__input" id="ml" required placeholder="kuklachev@gmail.com" pattern=".+@gmail.com">
+          </div>
+          <div class="block-number">
+            <label for="ph" class="block-number__label">
+              Телефон:*
+            </label>
+            <input type="tel" name="phone" class="block-number__input" id="ph" pattern="[0-09]{1,15}"
+            required placeholder="8 (960) 900-60-90">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Comments -->
+    <section class="comments">
+      <div class="wrapp-comments">
+        <h2 class="wrapp-comments__title">
+          Комментарий
+        </h2>
+        <img src="images/line-mobile.png" alt="green line" class="wrapp-comments__line">
+      </div>
+      <div class="form-comments">
+
+        <textarea name="text"  type="text"
+        class="form-comments__area" placeholder="Расскажите обо всех повадках кота" ></textarea>
+      </div>
+    </section>
+    <!-- Section checkbox -->
+    <section class="checkbox">
+      <div class="wrapp-checkbox">
+        <h2 class="wrapp-checkbox__title">
+          Дополнительно
+        </h2>
+        <img src="images/line-mobile.png" alt="green line" class="wrapp-checkbox__line">
+
+        <div class="form-checkbox">
+          <div class="block-checkbox">
+            <input type="checkbox" id="ch1" name="box" class="block-checkbox__input" checked>
+            <label for="ch1" class="block-checkbox__label">
+              Сахарозаменитель
+            </label>
+          </div>
+          <div class="block-checkbox">
+            <input type="checkbox" id="ch2" name="box" class="block-checkbox__input">
+            <label for="ch2" class="block-checkbox__label">
+              Питьевая вода
+            </label>
+          </div>
+          <div class="block-checkbox">
+            <input type="checkbox" id="ch3" name="box" class="block-checkbox__input">
+            <label for="ch3" class="block-checkbox__label">
+              Молоко
+            </label>
+          </div>
+          <div class="block-checkbox">
+            <input type="checkbox" id="ch4" name="box" class="block-checkbox__input">
+            <label for="ch4" class="block-checkbox__label">
+              Витамины
+            </label>
+          </div>
+        </div>
+        <div class="cont-button">
+          <button class="cont-button__btn" type="submit" name="button">
+            Отправить заявку
+          </button>
+          <p class="cont-button__text">
+            * — Обязательные поля
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--  Section place  -->
+  <section class="place">
+
+    <div class="map-container map-container_color">
+      <div class="block-place ">
+        <h3 class="block-place__title">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </h3>
+        <div class="adress-place">
+          <p class="adress-place__home">
+            ул. Большая Конюшенная, д. 19/8
+          </p>
+          <p class="adress-place__city">
+            Санкт-Петербург
+          </p>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1621509533169!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  </main>
+<!-- Main end -->
+<!-- Footer start -->
+<footer class="footer">
+  <div class="container-footer">
+    <div class="cont-logo">
+      <img src="images/footer-logo.png" alt="logo" class="cont-logo__logo">
+    </div>
+    <div class="cont-social">
+      <ul class="list-social">
+        <li class="social-item social-item_vk">
+          <a href="#!" class="social-item__link social-item__link_vk"></a>
+        </li>
+        <li class="social-item social-item_inst ">
+          <a href="#!" class="social-item__link social-item__link_inst"></a>
+        </li>
+        <li class="social-item social-item_fb">
+          <a href="#!" class="social-item__link social-item__link_fb"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="cont-html">
+      <a href="#!" class="link-footer">
+        <img src="images/html.png" alt="HTML Academy" class="link-footer__text">
+        <img src="images/html-logo.png" alt="html logo" class="link-footer__logo">
+      </a>
+
+    </div>
+  </div>
+
+
+</footer>
+<script src="js/main.min.js"></script>
+<!-- Footer end -->
+</body>
+</html>
+

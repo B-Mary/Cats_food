@@ -1,0 +1,121 @@
+.card-product__buttton{
+  color: #fff;
+  text-transform: uppercase;
+  background-color:  #68b738;
+  padding: 13px 111px;
+  width: 61px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.card-more__button{
+  color:#444; 
+  padding: 13px 108px;
+  background-color:rgb(218, 214, 214) ;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  width: 61px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-additional__button{
+  color: #fff;
+  text-transform: uppercase;
+  background-color:  #68b738;
+  padding: 13px 108px;
+}
+
+.cont-button__btn{
+  color: #fff;
+  text-transform: uppercase;
+  background-color:  #68b738;
+  font-size: 16px;
+  padding: 13px 30%;
+  white-space: nowrap;
+  border: none;
+}
+
+// Tablet
+@media (min-width: 768px){
+  .card-product__buttton{
+    color: #fff;
+    text-transform: uppercase;
+    background-color:  #68b738;
+    padding: 12px 95px;
+    width: 61px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .card-more__button{
+    color:#444; 
+    padding: 12px 95px;
+    background-color:rgb(218, 214, 214) ;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .card-additional__button{
+    color: #fff;
+    text-transform: uppercase;
+    background-color:  #68b738;
+     padding: 13px 42%;
+    text-align: center;
+  }
+
+  .cont-button__btn{
+    color: #fff;
+  text-transform: uppercase;
+  background-color:  #68b738;
+  font-size: 20px;
+  padding: 13px 15%;
+  white-space: nowrap;
+  border: none;
+  }
+
+
+}
+
+// Desktop
+@media (min-width: 1300px){
+  .card-product__buttton{
+    color: #fff;
+    text-transform: uppercase;
+    background-color:  #68b738;
+    padding: 13px 53px;
+    width: 61px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .card-more__button{
+    color:#444; 
+    padding: 13px 53px;
+    background-color:rgb(218, 214, 214) ;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .card-additional__button{
+    color: #fff;
+    text-transform: uppercase;
+    background-color:  #68b738;
+    padding: 10px 90px;
+    width: 61px;
+    height: 15px;
+    margin-top: 20px;
+  }
+
+  .cont-button__btn{
+    color: #fff;
+    text-transform: uppercase;
+    background-color:  #68b738;
+    font-size: 20px;
+    padding: 13px 20%;
+    white-space: nowrap;
+    border: none;
+  }
+}

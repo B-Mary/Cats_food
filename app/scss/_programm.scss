@@ -1,0 +1,165 @@
+.programm{
+  width: 100%;
+  background-image: url("../images/index-background-mobile.jpg") ;
+  // background-repeat: no-repeat;
+   color: white;
+  // background-size: contain;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 305px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-programm{
+
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.title-programm__title{
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  width: 270px;
+}
+
+.title-programm__text{
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 19px;
+  margin-left: 22px;
+  margin-right: 25px ;
+}
+.picture{
+  margin: 0 auto;
+}
+.programm__img{
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.programm__button{
+  margin: 0 auto;
+  text-align: center;
+  width: 133px;
+  padding: 14px 74px 11px 73px;
+  color: #fff;
+  background-color: #68b738;
+  margin-top: 3px;
+}
+.programm__button:hover{
+  background-color: #5eaa2f;
+}
+
+@media (min-width: 768px){
+  .programm{
+   background: #fff;
+   position: relative;
+  }
+  .title-programm{
+    margin: 0;
+    margin-left: 120px;
+    margin-top: 68px;
+  }
+  .title-programm__title{
+    width: 420px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .title-programm__text{
+    margin-top: 33px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 0;
+  }
+  .picture{
+    margin: 0;
+  }
+
+  .programm__img{
+    position: relative;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
+    margin-left: 29px;
+  }
+
+  .programm__button{
+    position: absolute;
+    top: 266px;
+    left: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 0 0 0 119px;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 2;
+    width: 190px;
+    padding: 17px 29px 15px 26px;
+    text-align: center;
+    background-color: #68b738;
+  }
+  .programm__button:hover{
+    background-color: #5eaa2f;
+  }
+}
+
+@media (min-width: 1300px){
+  .programm{
+    background: transparent;
+  }
+  .title-programm{
+    margin-left: 163px;
+    margin-top: 113px;
+  }
+
+  .title-programm__title{
+    width: 410px;
+    height: 122px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .title-programm__text{
+    margin-top: 33px;
+  }
+
+  .programm__button{
+    position: absolute;
+    top: 383px;
+    left: 0;
+    margin-left: 163px;
+  }
+
+  .programm__img{
+    position: relative;
+    top: -310px;
+    left: 485px;
+    width: 552px;
+    height: 499px;
+  }
+
+
+
+}

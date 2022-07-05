@@ -1,0 +1,277 @@
+
+
+.wrapp-selection__title{
+  font-size: 36px;
+  margin-top: 31px;
+  margin-left: 5%;
+}
+
+.wrapp-selection__text{
+  font-size: 14px;
+  margin-top: 35px;
+  width: 226px;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+
+.cont-selection{
+  margin-top: 35px;
+
+}
+
+.block-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
+.cont-1,
+.cont-2,
+.cont-3{
+  width: 90%;
+  position: relative;
+  height: 60px;
+}
+
+.block-form__label{
+  font-size:16px ;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.block-form__input{
+  margin-bottom: 15px;
+  height: 45px;
+  border-radius: 3%;
+  border: 1px solid rgba(0,0,0,0.1);
+  color: #444;
+  font-size: 16px;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.block-form__input:hover{
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.block-form__input:active{
+  border: 1px solid #000;
+}
+.block-form__input:valid{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.block-form__input:invalid{
+  border-color:red;
+}
+.block-form__input:required{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+.block-form__input_name{
+  width: 65%;
+}
+
+.block-form__input_weight{
+  width: 55%;
+}
+
+.block-form__input_age{
+ width:  45%;
+}
+
+.form-input{
+  margin-top: 15px;
+  border-top: 1px solid  rgba(0,0,0,0.1);
+  margin-bottom: 26px;
+}
+
+.body-input{
+  margin-top: 26px;
+  position: relative;
+  height: 30px;
+  margin-left: 5%;
+}
+.body-input__input{
+  display: none;
+}
+
+.body-input__label{
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 45px;
+}
+
+.body-input__label::before{
+  content: url(../images/radibtn.png);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width:30px ;
+  height: 30px;
+}
+.body-input__input:checked + .body-input__label::after{
+  content: url(../images/radibtn-cheked.png);
+  position: absolute;
+  top: 0;
+  left: 9px;
+}
+
+// Tablet
+@media (min-width: 768px){
+  .wrapp-selection__title{
+    font-size: 60px;
+    margin-top: 60px;
+  }
+
+  .wrapp-selection__text{
+    font-size: 20px;
+    margin-top: 53px;
+    margin-left: 10%;
+    width: 345px;
+  }
+
+  .cont-selection{
+    margin-top: 69px;
+    margin-left: 10%;
+  }
+
+  .cont-1,
+  .cont-2,
+  .cont-3{
+    width: 90%;
+    position: relative;
+    height: 75px;
+  }
+  .block-form{
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .block-form__label{
+    font-size:20px ;
+    text-transform: uppercase;
+    position: absolute;
+    top: 23px;
+    left: 0;
+  }
+  .block-form__input{
+    height: 52px;
+    border-radius: 3%;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #444;
+    font-size: 20px;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .block-form__input_name{
+    width: 85%;
+  }
+
+  .block-form__input_weight{
+    width: 80%;
+  }
+
+  .block-form__input_age{
+   width:  75%;
+  }
+
+  .form-input{
+    margin-top: 60px;
+    margin-bottom: 65px;
+    width: 90%;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .body-input{
+    margin-top: 16px;
+    height: 40px;
+  }
+
+  .body-input__label{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 45px;
+  }
+
+  .body-input__label::before{
+    content: url(../images/radibtn.png);
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width:30px ;
+    height: 30px;
+  }
+  .body-input__input:checked + .body-input__label::after{
+    content: url(../images/radibtn-cheked.png);
+    position: absolute;
+    top: -1px;
+    left: 9px;
+  }
+
+}
+
+// Desktop
+@media (min-width: 1300px){
+
+  .wrapp-selection__text{
+    font-size: 20px;
+    margin-top: 53px;
+    margin-left: 5%;
+    width: 345px;
+    margin-bottom: 0;
+  }
+
+  .cont-selection{
+    margin-top: 69px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .block-form{
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .cont-1,
+  .cont-2,
+  .cont-3{
+    width: 95%;
+    position: relative;
+    height: 73px;
+  }
+
+  .block-form__label{
+    font-size:20px ;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  .form-input{
+    margin-top: 0;
+    height: 200px;
+    margin-right: 5%;
+    border-radius: 5px;
+  }
+  .body-input{
+    margin-top: 20px;
+    height: 40px;
+  }
+
+  .body-input_f{
+    margin-top: 26px
+  }
+
+}
